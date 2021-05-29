@@ -1,0 +1,11 @@
+Untuk Admin
+email : arikuncorom@fmail.com	
+Pass : 123456	
+
+Untuk Kasir 
+Email : kasir@gmail.com	
+Pass : 12345
+
+Untuk User / manager
+Email : manager@fmail.com	
+Pass : 12345
