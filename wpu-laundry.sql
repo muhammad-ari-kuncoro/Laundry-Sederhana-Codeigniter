@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2021 at 10:39 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.3.9
+-- Waktu pembuatan: 04 Jun 2021 pada 13.17
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pelanggan`
+-- Struktur dari tabel `pelanggan`
 --
 
 CREATE TABLE `pelanggan` (
@@ -37,7 +37,7 @@ CREATE TABLE `pelanggan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pelanggan`
+-- Dumping data untuk tabel `pelanggan`
 --
 
 INSERT INTO `pelanggan` (`id`, `nama`, `alamat`, `jenis_kelamin`, `tlp`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `pelanggan` (`id`, `nama`, `alamat`, `jenis_kelamin`, `tlp`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_otlet`
+-- Struktur dari tabel `tb_otlet`
 --
 
 CREATE TABLE `tb_otlet` (
@@ -57,7 +57,7 @@ CREATE TABLE `tb_otlet` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_otlet`
+-- Dumping data untuk tabel `tb_otlet`
 --
 
 INSERT INTO `tb_otlet` (`id`, `nama_otlet`, `alamat`, `tlp`) VALUES
@@ -66,7 +66,7 @@ INSERT INTO `tb_otlet` (`id`, `nama_otlet`, `alamat`, `tlp`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_paket`
+-- Struktur dari tabel `tb_paket`
 --
 
 CREATE TABLE `tb_paket` (
@@ -77,7 +77,7 @@ CREATE TABLE `tb_paket` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_paket`
+-- Dumping data untuk tabel `tb_paket`
 --
 
 INSERT INTO `tb_paket` (`id`, `jenis`, `nama_paket`, `harga`) VALUES
@@ -86,7 +86,7 @@ INSERT INTO `tb_paket` (`id`, `jenis`, `nama_paket`, `harga`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_transaksi`
+-- Struktur dari tabel `tb_transaksi`
 --
 
 CREATE TABLE `tb_transaksi` (
@@ -104,7 +104,7 @@ CREATE TABLE `tb_transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_transaksi`
+-- Dumping data untuk tabel `tb_transaksi`
 --
 
 INSERT INTO `tb_transaksi` (`id`, `nama_otlet`, `nama_pelanggan`, `tgl`, `batas_waktu`, `nama_paket`, `jml_kilo`, `harga`, `total`, `tgl_bayar`, `dibayar`) VALUES
@@ -113,7 +113,7 @@ INSERT INTO `tb_transaksi` (`id`, `nama_otlet`, `nama_pelanggan`, `tgl`, `batas_
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -128,7 +128,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
@@ -139,7 +139,7 @@ INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_a
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_access_menu`
+-- Struktur dari tabel `user_access_menu`
 --
 
 CREATE TABLE `user_access_menu` (
@@ -149,7 +149,7 @@ CREATE TABLE `user_access_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user_access_menu`
+-- Dumping data untuk tabel `user_access_menu`
 --
 
 INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
@@ -169,7 +169,7 @@ INSERT INTO `user_access_menu` (`id`, `role_id`, `menu_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_menu`
+-- Struktur dari tabel `user_menu`
 --
 
 CREATE TABLE `user_menu` (
@@ -178,7 +178,7 @@ CREATE TABLE `user_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user_menu`
+-- Dumping data untuk tabel `user_menu`
 --
 
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
@@ -193,7 +193,7 @@ INSERT INTO `user_menu` (`id`, `menu`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_role`
+-- Struktur dari tabel `user_role`
 --
 
 CREATE TABLE `user_role` (
@@ -202,7 +202,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user_role`
+-- Dumping data untuk tabel `user_role`
 --
 
 INSERT INTO `user_role` (`id`, `role`) VALUES
@@ -213,7 +213,7 @@ INSERT INTO `user_role` (`id`, `role`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_sub_menu`
+-- Struktur dari tabel `user_sub_menu`
 --
 
 CREATE TABLE `user_sub_menu` (
@@ -226,7 +226,7 @@ CREATE TABLE `user_sub_menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `user_sub_menu`
+-- Dumping data untuk tabel `user_sub_menu`
 --
 
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active`) VALUES
@@ -252,28 +252,28 @@ INSERT INTO `user_sub_menu` (`id`, `menu_id`, `title`, `url`, `icon`, `is_active
 --
 
 --
--- Indexes for table `pelanggan`
+-- Indeks untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `nama` (`nama`);
 
 --
--- Indexes for table `tb_otlet`
+-- Indeks untuk tabel `tb_otlet`
 --
 ALTER TABLE `tb_otlet`
   ADD PRIMARY KEY (`id`),
   ADD KEY `nama_otlet` (`nama_otlet`);
 
 --
--- Indexes for table `tb_paket`
+-- Indeks untuk tabel `tb_paket`
 --
 ALTER TABLE `tb_paket`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `nama_paket` (`nama_paket`);
 
 --
--- Indexes for table `tb_transaksi`
+-- Indeks untuk tabel `tb_transaksi`
 --
 ALTER TABLE `tb_transaksi`
   ADD PRIMARY KEY (`id`),
@@ -283,14 +283,14 @@ ALTER TABLE `tb_transaksi`
   ADD KEY `nama_pelanggan_2` (`nama_pelanggan`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD KEY `role_id` (`role_id`);
 
 --
--- Indexes for table `user_access_menu`
+-- Indeks untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   ADD PRIMARY KEY (`id`),
@@ -298,101 +298,101 @@ ALTER TABLE `user_access_menu`
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- Indexes for table `user_menu`
+-- Indeks untuk tabel `user_menu`
 --
 ALTER TABLE `user_menu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_role`
+-- Indeks untuk tabel `user_role`
 --
 ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user_sub_menu`
+-- Indeks untuk tabel `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   ADD PRIMARY KEY (`id`),
   ADD KEY `menu_id` (`menu_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `pelanggan`
+-- AUTO_INCREMENT untuk tabel `pelanggan`
 --
 ALTER TABLE `pelanggan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `tb_otlet`
+-- AUTO_INCREMENT untuk tabel `tb_otlet`
 --
 ALTER TABLE `tb_otlet`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `tb_paket`
+-- AUTO_INCREMENT untuk tabel `tb_paket`
 --
 ALTER TABLE `tb_paket`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `tb_transaksi`
+-- AUTO_INCREMENT untuk tabel `tb_transaksi`
 --
 ALTER TABLE `tb_transaksi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT for table `user_access_menu`
+-- AUTO_INCREMENT untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
--- AUTO_INCREMENT for table `user_menu`
+-- AUTO_INCREMENT untuk tabel `user_menu`
 --
 ALTER TABLE `user_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `user_role`
+-- AUTO_INCREMENT untuk tabel `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `user_sub_menu`
+-- AUTO_INCREMENT untuk tabel `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `user`
+-- Ketidakleluasaan untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `user_role` (`id`);
 
 --
--- Constraints for table `user_access_menu`
+-- Ketidakleluasaan untuk tabel `user_access_menu`
 --
 ALTER TABLE `user_access_menu`
   ADD CONSTRAINT `user_access_menu_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `user_role` (`id`),
   ADD CONSTRAINT `user_access_menu_ibfk_2` FOREIGN KEY (`menu_id`) REFERENCES `user_menu` (`id`);
 
 --
--- Constraints for table `user_sub_menu`
+-- Ketidakleluasaan untuk tabel `user_sub_menu`
 --
 ALTER TABLE `user_sub_menu`
   ADD CONSTRAINT `user_sub_menu_ibfk_1` FOREIGN KEY (`menu_id`) REFERENCES `user_menu` (`id`);
